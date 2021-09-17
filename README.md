@@ -1,101 +1,58 @@
-<img width="179" alt="screen shot 2018-04-11 at 14 55 21" src="https://images.prismic.io/barkyn/39a6fcbe-be3d-4c12-b568-69a3e7dc6db2_logo.png?auto=compress,format">
 
-[Barkyn](https://www.barkyn.com/) is a subscription for pets, changing the pet market and reshaping the way the ecommerce experience should feel - human, seamless & beautiful.
-It's true happiness in a box: food, goodies, vet support and personalized care all-in-one.
+![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
 
-Barkyn was one of the 8 startups selected by Google's to its Growth Program and has been highlighted by large media like Monocle. The company is operating in
-several European markets, becoming a loved brand online.
+This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
+![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
+## What is inside?
 
-## Getting Started 🐶
+This project uses lot of stuff as:
 
-This is our coding challenge, aimed at getting to know you and your code a bit better.</br>
-There's no time limit on the challenge, do your best at your own time.</br>
+- [TypeScript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Storybook](https://storybook.js.org/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://github.com/typicode/husky)
 
-If you have any questions while developing that aren't made clear here, reach out to [dev@barkyn.com](mailto:dev@barkyn.com).
+## Getting Started
 
-Most of all, we hope you have fun working on this, show off your skills!
+First, run the development server:
 
-1.  Fork this repository to your personal github account
-2.  Solve the challenge, do your best :)
-3.  Send us an email with your repository url to: [dev@barkyn.com](mailto:dev@barkyn.com)
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## About the Challenge
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Please take a look on the [challenge layout](https://share.goabstract.com/6dadeb1d-f205-49b7-af8c-f0bc2652a242).</br>
-You will find everything you need on `/assets` folder.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-You will be building a React web app based on the Next.js framework.
-To learn a bit more about the stack:
+## Commands
 
-- [React](https://facebook.github.io/react)
-- [Next.js](https://nextjs.org)
+- `dev`: runs your application on `localhost:3000`
+- `build`: creates the production build version
+- `start`: starts a simple server with the build production code
+- `lint`: runs the linter in all components and pages
+- `test`: runs jest to test all components and pages
+- `test:watch`: runs jest in watch mode
+- `storybook`: runs storybook on `localhost:6006`
+- `build-storybook`: create the build version of storybook
 
-The goal is to build a checkout process within a single page application that includes 3 pages and with some steps in between:
+## Learn More
 
-- Product list and selection page
-- Checkout page
-  - Shipping details form
-- Success page
+To learn more about Next.js, take a look at the following resources:
 
-### Product list and selection page
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Present a list of up to 5 products. To create such products you can use [faker.js](https://rawgit.com/Marak/faker.js/master/examples/browser/index.html#commerce) or other tool
-- The user should be able to select a single one of those products
-- After selecting the product, at least one product variant should be presented (e.g. quantity, size, color, etc.)
-- The user should be able to add the selected product and variant
-- A summary section should be shown with the final price the user will pay
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Checkout page
+## Deploy on Vercel
 
-- The checkout page must be a different route
-- It should have a summary section with all products in cart and total price
-- All form fields must be filled in order to complete a successful purchase
-- The user should be able to save the selected shipping details
-- Add a button to complete the order that routes to a success page - no need to actually fake a purchase
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Success page
-
-- The success page must be a different route
-- Present a success message showing the order has been completed
-- List all products purchased, the shipping details and total price paid
-
-## Acceptance criteria (must have)
-
-- Use of React and Next.js
-- Does it run as expected: Does the step-by-step required to run the application work?
-- Code organization: Module separation and project organization
-- Documentation of your process:
-  - Instructions on how to run the project (e.g. README.md, DEVELOPERLOG.md)
-  - What was done
-  - What could be improved
-- Pages must be fully responsive and mobile friendly
-- Unit tests - no need to achieve 100% coverage, but rather cover some components to showcase your test writing skills
-- Good markup, semantic HTML and SEO concerns
-
-## Optional criteria (nice to have)
-
-- Use of CSS-in-JS
-- Use of TypeScript
-- Use of [Storybook](https://storybook.js.org)
-- Loading transitions between pages (e.g. [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton))
-- Accessibility concerns
-- A demo website running on Vercel, Netlify or any other similar free platform
-- It doesn't have to be pixel perfect but follow the layout
-- Use theme with design tokens
-- Use a internationalization framework (e.g. [i18next](https://www.i18next.com/))
-
-## Other notes
-
-These are some of the technologies in our stack, feel free to use them in your project or to showcase good alternatives:
-
-- [Yarn](https://yarnpkg.com)
-- [Emotion](https://emotion.sh)
-- [Formik](https://formik.org)
-- [ESLint](https://eslint.org)
-- [stylelint](https://stylelint.io)
-- [Prettier](https://prettier.io)
-- [Jest](https://jestjs.io)
-- [React Testing Library](https://testing-library.com)
-- [TypeScript](https://www.typescriptlang.org)
-
-_Good luck !_ 🐕
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
