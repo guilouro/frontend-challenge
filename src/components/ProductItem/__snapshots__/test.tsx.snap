@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductItem /> should render correctly 1`] = `
+.c0 {
+  background-color: #fafafa;
+  padding: 1.6rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 14.8rem 1fr;
+  grid-template-areas: 'image info' 'button button';
+}
+
+.c1 {
+  grid-area: image;
+}
+
+.c2 {
+  grid-area: info;
+}
+
+.c9 {
+  grid-area: button;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #383743;
+}
+
+.c5 {
+  display: none;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #5f2eff;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6c6b76;
+  margin: 1.6rem 0;
+}
+
+.c10 {
+  background-color: #5f2eff;
+  border-radius: 1.6rem;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Azo sans,sans-serif;
+  font-size: 1.4rem;
+  min-height: 4rem;
+  padding: 0.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out background-color;
+  transition: 0.2s ease-in-out background-color;
+  width: 100%;
+}
+
+.c10:hover {
+  background-color: #5400db;
+}
+
+.c7 {
+  color: #f1c40f;
+}
+
+.c8 {
+  color: #e7e7e9;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-template-columns: 20rem 1fr;
+    grid-template-areas: 'image info' 'image button';
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    max-width: 14.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 2.0rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1.4rem;
+  }
+}
+
+<article
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    >
+      <div
+        style="box-sizing: border-box; display: block; max-width: 100%;"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+        />
+      </div>
+      <img
+        alt="Barkyn Cannabis Oil para cães"
+        data-nimg="intrinsic"
+        decoding="async"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+      />
+      <noscript />
+    </div>
+  </div>
+  <div
+    class="c2"
+  >
+    <h3
+      class="c3"
+    >
+      Barkyn Cannabis Oil para cães
+    </h3>
+    <div
+      class="c4"
+    >
+      <span
+        class="c5"
+      >
+        Price
+      </span>
+      <span>
+        <div
+          class="c6"
+        >
+          2.29
+        </div>
+      </span>
+    </div>
+    <div
+      class="c4"
+    >
+      <span>
+        Package
+      </span>
+      <span>
+        170g
+      </span>
+    </div>
+    <div
+      class="c4"
+    >
+      <span>
+        Review
+      </span>
+      <span>
+        <div
+          aria-label="3 stars of 5"
+          role="img"
+        >
+          <svg
+            class="c7"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="m0 0h24v24h-24z"
+              />
+              <path
+                d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <svg
+            class="c7"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="m0 0h24v24h-24z"
+              />
+              <path
+                d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <svg
+            class="c7"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="m0 0h24v24h-24z"
+              />
+              <path
+                d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <svg
+            class="c8"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="m0 0h24v24h-24z"
+              />
+              <path
+                d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <svg
+            class="c8"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="m0 0h24v24h-24z"
+              />
+              <path
+                d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    class="c9"
+  >
+    <button
+      class="c10"
+    >
+      Add to cart
+    </button>
+  </div>
+</article>
+`
