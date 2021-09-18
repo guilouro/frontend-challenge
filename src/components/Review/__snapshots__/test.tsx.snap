@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Review /> should render correctly without stars 1`] = `
+.c0 {
+  color: #e7e7e9;
+}
+
+<div
+  aria-label="0 stars of 5"
+  role="img"
+>
+  <svg
+    class="c0"
+    height="16"
+    viewBox="0 0 24 24"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="m0 0h24v24h-24z"
+      />
+      <path
+        d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+  <svg
+    class="c0"
+    height="16"
+    viewBox="0 0 24 24"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="m0 0h24v24h-24z"
+      />
+      <path
+        d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+  <svg
+    class="c0"
+    height="16"
+    viewBox="0 0 24 24"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="m0 0h24v24h-24z"
+      />
+      <path
+        d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+  <svg
+    class="c0"
+    height="16"
+    viewBox="0 0 24 24"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="m0 0h24v24h-24z"
+      />
+      <path
+        d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+  <svg
+    class="c0"
+    height="16"
+    viewBox="0 0 24 24"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="m0 0h24v24h-24z"
+      />
+      <path
+        d="m12 18-5.26 2.765a1 1 0 0 1 -1.45-1.054l1.004-5.857-4.256-4.148a1 1 0 0 1 .554-1.706l5.881-.854 2.63-5.329a1 1 0 0 1 1.794 0l2.63 5.329 5.88.854a1 1 0 0 1 .555 1.706l-4.256 4.148 1.005 5.857a1 1 0 0 1 -1.451 1.054z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+</div>
+`
