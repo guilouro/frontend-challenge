@@ -1,6 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductItem /> should render correctly 1`] = `
+.c10 {
+  background-color: #5f2eff;
+  border-radius: 1.6rem;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Azo sans,sans-serif;
+  font-size: 1.4rem;
+  min-height: 4rem;
+  padding: 0.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out background-color;
+  transition: 0.2s ease-in-out background-color;
+  width: 100%;
+}
+
+.c10:hover {
+  background-color: #5400db;
+}
+
+.c7 {
+  color: #f1c40f;
+}
+
+.c8 {
+  color: #e7e7e9;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #5f2eff;
+}
+
 .c0 {
   background-color: #fafafa;
   padding: 1.6rem;
@@ -32,16 +71,6 @@ exports[`<ProductItem /> should render correctly 1`] = `
   display: none;
 }
 
-.c6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #5f2eff;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -55,35 +84,6 @@ exports[`<ProductItem /> should render correctly 1`] = `
   font-weight: 400;
   color: #6c6b76;
   margin: 1.6rem 0;
-}
-
-.c10 {
-  background-color: #5f2eff;
-  border-radius: 1.6rem;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  font-family: Azo sans,sans-serif;
-  font-size: 1.4rem;
-  min-height: 4rem;
-  padding: 0.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: 0.2s ease-in-out background-color;
-  transition: 0.2s ease-in-out background-color;
-  width: 100%;
-}
-
-.c10:hover {
-  background-color: #5400db;
-}
-
-.c7 {
-  color: #f1c40f;
-}
-
-.c8 {
-  color: #e7e7e9;
 }
 
 @media (min-width:768px) {
@@ -163,13 +163,13 @@ exports[`<ProductItem /> should render correctly 1`] = `
       >
         Price
       </span>
-      <span>
+      <div>
         <div
           class="c6"
         >
           2.29
         </div>
-      </span>
+      </div>
     </div>
     <div
       class="c4"

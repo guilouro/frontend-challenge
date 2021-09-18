@@ -1,16 +1,18 @@
 import Image from 'next/image'
-import * as S from './styles'
-import formatPrice from 'utils/format-price'
 import Button from 'components/Button'
 import Review, { ReviewProps } from 'components/Review'
+import PromotionalPrice, {
+  PromotionalPriceProps
+} from 'components/PromotionalPrice'
+
+import * as S from './styles'
 
 export type ProductItemProps = {
   title: string
-  price: number
   packageInfo: string
   image: string
-  promotionalPrice?: number
-} & ReviewProps
+} & ReviewProps &
+  PromotionalPriceProps
 
 const ProductItem = ({
   title,
@@ -28,12 +30,7 @@ const ProductItem = ({
       <S.Title>{title}</S.Title>
       <S.Item>
         <S.PriceLabel>Price</S.PriceLabel>
-        <span>
-          {promotionalPrice ? (
-            <S.Price isPromotional>{formatPrice(price)}</S.Price>
-          ) : null}
-          <S.Price>{formatPrice(promotionalPrice || price)}</S.Price>
-        </span>
+        <PromotionalPrice promotionalPrice={promotionalPrice} price={price} />
       </S.Item>
       <S.Item>
         <span>Package</span>

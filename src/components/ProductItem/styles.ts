@@ -1,4 +1,4 @@
-import styled, { css, DefaultTheme } from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.article`
@@ -55,30 +55,6 @@ export const PriceLabel = styled.span`
 
   ${media.greaterThan('medium')`
     display: block;
-  `}
-`
-
-type PriceProps = {
-  isPromotional?: boolean
-}
-
-const priceModifiers = {
-  promotional: (theme: DefaultTheme) => css`
-    color: ${theme.colors.textLight};
-    text-decoration: line-through;
-    margin-right: ${theme.spacings.xsmall};
-    font-weight: ${theme.font.normal};
-  `
-}
-
-export const Price = styled.div<PriceProps>`
-  ${({ theme, isPromotional = false }) => css`
-    display: inline-flex;
-    font-size: ${theme.font.sizes.small};
-    font-weight: ${theme.font.bold};
-    color: ${theme.colors.base};
-
-    ${isPromotional && priceModifiers.promotional(theme)}
   `}
 `
 
