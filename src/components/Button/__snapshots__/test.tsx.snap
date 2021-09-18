@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render as button 1`] = `
+.c0 {
+  background-color: #5f2eff;
+  border-radius: 1.6rem;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Azo sans,sans-serif;
+  font-size: 1.4rem;
+  min-height: 4rem;
+  padding: 0.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out background-color;
+  transition: 0.2s ease-in-out background-color;
+  width: 100%;
+}
+
+.c0:hover {
+  background-color: #5400db;
+}
+
+<button
+  class="c0"
+>
+  Click here
+</button>
+`
