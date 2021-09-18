@@ -25,7 +25,7 @@ export default {
     base: '#5f2eff',
     baseDark: '#5400db',
     mainBg: '#fafafa',
-    white: '#FAFAFA',
+    white: '#fff',
     text: '#383743',
     textLight: '#6c6b76'
   },
@@ -37,6 +37,9 @@ export default {
     large: '4.0rem',
     xlarge: '4.8rem',
     xxlarge: '5.6rem'
+  },
+  shadow: {
+    medium: '0px 2px 8px 0px rgba(18,18,23,0.08)'
   },
   layers: {
     base: 10,
