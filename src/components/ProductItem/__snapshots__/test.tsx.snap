@@ -42,7 +42,7 @@ exports[`<ProductItem /> should render correctly 1`] = `
 
 .c0 {
   background-color: #fafafa;
-  padding: 1.6rem;
+  padding: 2.4rem 1.6rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: 14.8rem 1fr;
@@ -88,6 +88,7 @@ exports[`<ProductItem /> should render correctly 1`] = `
 
 @media (min-width:768px) {
   .c0 {
+    padding: 2.4rem;
     grid-template-columns: 20rem 1fr;
     grid-template-areas: 'image info' 'image button';
   }

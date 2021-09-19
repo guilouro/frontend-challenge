@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 export const Wrapper = styled.article`
   ${({ theme }) => css`
     background-color: ${theme.colors.mainBg};
-    padding: ${theme.spacings.xsmall};
+    padding: ${theme.spacings.small} ${theme.spacings.xsmall};
     display: grid;
     gap: 1rem;
     grid-template-columns: 14.8rem 1fr;
@@ -13,6 +13,7 @@ export const Wrapper = styled.article`
       'button button';
 
     ${media.greaterThan('medium')`
+      padding: ${theme.spacings.small};
       grid-template-columns: 20rem 1fr;
       grid-template-areas:
         'image info'

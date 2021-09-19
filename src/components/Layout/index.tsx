@@ -1,4 +1,3 @@
-import { Container } from 'components/Container'
 import HeaderBar from 'components/HeaderBar'
 import Image from 'next/image'
 import * as S from './styles'
@@ -8,14 +7,14 @@ export type LayoutProps = {
 }
 
 const Layout = ({ children }: LayoutProps) => (
-  <main>
+  <S.Wrapper>
     <HeaderBar>
       <S.Header>
-        <Image src="/img/logo.svg" width={110} height={33} alt="Barkyn Brand" />
+        <Image src="/img/logo.svg" width={120} height={35} alt="Barkyn Brand" />
       </S.Header>
     </HeaderBar>
-    <Container>{children}</Container>
-  </main>
+    {children}
+  </S.Wrapper>
 )
 
 export default Layout
