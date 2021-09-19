@@ -18,5 +18,9 @@ export const Wrapper = styled.button`
     &:hover {
       background-color: ${theme.colors.baseDark};
     }
+
+    &:disabled {
+      background-color: ${theme.colors.textLight};
+    }
   `}
 `

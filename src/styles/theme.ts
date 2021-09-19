@@ -1,6 +1,6 @@
 export default {
   grid: {
-    container: '130rem',
+    container: '120rem',
     gutter: '3.2rem'
   },
   border: {
@@ -27,7 +27,10 @@ export default {
     mainBg: '#fafafa',
     white: '#fff',
     text: '#383743',
-    textLight: '#6c6b76'
+    textLight: '#6c6b76',
+    success: '#00b856',
+    line: '#e7e7e9',
+    error: '#ff4b2e'
   },
   spacings: {
     xxsmall: '0.8rem',

@@ -12,6 +12,7 @@ export const Image = styled.div`
 `
 
 export const Content = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,6 +21,7 @@ export const Content = styled.div`
 export const Title = styled.h3`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
+    font-weight: ${theme.font.normal};
   `}
 `
 
