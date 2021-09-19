@@ -7,21 +7,10 @@ import OrderItem from 'components/OrderItem'
 import * as S from './styles'
 import Button, { ButtonProps } from 'components/Button'
 import CartAmount from 'components/CartAmount'
-
-const orders = [
-  {
-    title: '2x Barkyn Cannabis Oil para cães',
-    image: '/img/products/oil.png',
-    price: 4.58
-  },
-  {
-    title: '1x Barkyn Cannabis Oil para cães',
-    image: '/img/products/cannabis.png',
-    price: 2.29
-  }
-]
+import { useCart } from 'hooks/use-cart'
 
 const Checkout = () => {
+  const { total, items } = useCart()
   const Submit = withSubmit((props: ButtonProps) => <Button {...props} />)
 
   return (
@@ -53,12 +42,15 @@ const Checkout = () => {
             <section>
               <S.OrderBox>
                 <S.Title>Your Cart</S.Title>
-                {orders.map((item) => (
+                {items.map((item) => (
                   <S.OrderItem key={item.title}>
-                    <OrderItem {...item} />
+                    <OrderItem
+                      {...item}
+                      title={`${item.quantity || 1}x ${item.title}`}
+                    />
                   </S.OrderItem>
                 ))}
-                <CartAmount subtotal={9} shipping={2} />
+                <CartAmount subtotal={total} shipping={2} />
                 <Submit>Complete Order</Submit>
               </S.OrderBox>
             </section>

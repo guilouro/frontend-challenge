@@ -1,3 +1,4 @@
+import { CartProvider } from 'hooks/use-cart'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
@@ -19,8 +20,10 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Component {...pageProps} />
+        <CartProvider>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </CartProvider>
       </ThemeProvider>
     </>
   )

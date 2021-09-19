@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import Image from 'next/image'
 import Button from 'components/Button'
 import Review, { ReviewProps } from 'components/Review'
@@ -8,9 +9,11 @@ import PromotionalPrice, {
 import * as S from './styles'
 
 export type ProductItemProps = {
+  id: string
   title: string
   packageInfo: string
   image: string
+  onClickButton: (event: React.MouseEvent<HTMLElement>) => void
 } & ReviewProps &
   PromotionalPriceProps
 
@@ -20,6 +23,7 @@ const ProductItem = ({
   packageInfo,
   review,
   image,
+  onClickButton,
   promotionalPrice = 0
 }: ProductItemProps) => (
   <S.Wrapper>
@@ -44,9 +48,9 @@ const ProductItem = ({
       </S.Item>
     </S.Info>
     <S.ButtonWrapper>
-      <Button>Add to cart</Button>
+      <Button onClick={onClickButton}>Add to cart</Button>
     </S.ButtonWrapper>
   </S.Wrapper>
 )
 
-export default ProductItem
+export default memo(ProductItem)
