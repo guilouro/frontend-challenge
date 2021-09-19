@@ -4,7 +4,7 @@ import { useContext, createContext, useState, useEffect } from 'react'
 import { getStorageItem, setStorageItem } from 'utils/storage'
 
 export type CartItem = {
-  quantity: number
+  quantity?: number
 } & Pick<
   ProductItemProps,
   'id' | 'price' | 'promotionalPrice' | 'title' | 'image' | 'packageInfo'

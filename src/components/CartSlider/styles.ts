@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.div`
+type WrapperProps = {
+  isOpen?: boolean
+}
+
+export const Wrapper = styled.div<WrapperProps>`
   ${({ theme, isOpen }) => css`
     position: fixed;
     overflow-x: scroll;

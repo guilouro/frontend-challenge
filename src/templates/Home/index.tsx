@@ -5,7 +5,7 @@ import { useCart } from 'hooks/use-cart'
 import * as S from './styles'
 
 export type HomeTemplateProps = {
-  items: ProductItemProps[]
+  items: Omit<ProductItemProps, 'onClickButton'>[]
 }
 
 const Home = ({ items = [] }: HomeTemplateProps) => {
@@ -19,9 +19,9 @@ const Home = ({ items = [] }: HomeTemplateProps) => {
       </S.SectionHeader>
 
       <S.List>
-        {items.map((item, i) => (
+        {items.map((item) => (
           <ProductItem
-            key={i}
+            key={item.id}
             {...item}
             onClickButton={() => addToCart(item)}
           />

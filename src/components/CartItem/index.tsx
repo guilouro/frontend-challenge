@@ -6,7 +6,7 @@ import PromotionalPrice from 'components/PromotionalPrice'
 export type CartItemProps = {
   quantity?: number
   onClickRemove: (event: React.MouseEvent<HTMLElement>) => void
-  onChangeQuantity: (event: React.ChangeEvent<HTMLSelectElement>) => void
+  onChangeQuantity: React.ChangeEventHandler<HTMLInputElement>
 } & Omit<ProductItemProps, 'review' | 'onClickButton'>
 
 const CartItem = ({
