@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CartItem /> should render correctly 1`] = `
+.c8 {
+  border: 2px solid #e7e7e9;
+  padding: 0.8rem 1.6rem;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -40,7 +45,16 @@ exports[`<CartItem /> should render correctly 1`] = `
   font-weight: 400;
 }
 
+.c9 {
+  width: 5rem;
+  padding: 0.3rem 0.8rem;
+}
+
 .c5 {
+  cursor: pointer;
+}
+
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -55,7 +69,7 @@ exports[`<CartItem /> should render correctly 1`] = `
   font-weight: 400;
 }
 
-.c6 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -106,9 +120,33 @@ exports[`<CartItem /> should render correctly 1`] = `
       >
         Barkyn Cannabis Oil para cães
       </h3>
-      <span>
-        X
-      </span>
+      <div
+        aria-label="Remove Barkyn Cannabis Oil para cães"
+        class="c5"
+        role="button"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </div>
+      </div>
     </div>
     <div
       class="c3"
@@ -118,12 +156,12 @@ exports[`<CartItem /> should render correctly 1`] = `
       </span>
       <div>
         <div
-          class="c5"
+          class="c6"
         >
           2.29
         </div>
         <div
-          class="c6"
+          class="c7"
         >
           2.24
         </div>
@@ -148,15 +186,36 @@ exports[`<CartItem /> should render correctly 1`] = `
         Quantity
       </label>
       <span>
-        <input
+        <select
+          class="c8 c9"
           id="quantity"
-          maxlength="2"
+          min="1"
           name="quantity"
           type="number"
-          value="1"
-        />
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+        </select>
       </span>
     </div>
   </div>
 </div>
-`
+`;
