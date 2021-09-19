@@ -3,13 +3,19 @@ import { render, screen } from 'utils/test-utils'
 import CartSlider from '.'
 
 describe('<CartSlider />', () => {
-  it.skip('should render the heading', () => {
-    const { container } = render(<CartSlider />)
+  it('should render slider', () => {
+    render(<CartSlider />)
 
     expect(
-      screen.getByRole('heading', { name: /CartSlider/i })
+      screen.getByRole('heading', { name: /your cart/i })
     ).toBeInTheDocument()
 
-    expect(container.firstChild).toMatchSnapshot()
+    expect(
+      screen.getByRole('button', { name: /close slider/i })
+    ).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('link', { name: /go to checkout/i })
+    ).toHaveAttribute('href', '/checkout')
   })
 })

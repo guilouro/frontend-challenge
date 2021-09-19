@@ -17,8 +17,6 @@ const CartSlider = () => {
     setItemQuantity,
     quantity
   } = useCart()
-
-  console.log(items)
   return (
     <S.Wrapper isOpen={sliderIsOpen}>
       <HeaderBar>
