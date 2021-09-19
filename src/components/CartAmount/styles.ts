@@ -11,7 +11,7 @@ export const Item = styled.div`
     color: ${theme.colors.text};
     margin: ${theme.spacings.xsmall} 0;
 
-    &:last-child {
+    &:nth-child(3) {
       border-top: 1px solid ${theme.colors.line};
       padding-top: ${theme.spacings.xsmall};
     }

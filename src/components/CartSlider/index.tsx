@@ -45,7 +45,7 @@ const CartSlider = () => {
         </S.Item>
       ))}
       <S.Content>
-        <CartAmount subtotal={total} />
+        <CartAmount subtotal={total} omitShipping />
         <Link href="/checkout" passHref>
           <Button as="a">Go to checkout</Button>
         </Link>

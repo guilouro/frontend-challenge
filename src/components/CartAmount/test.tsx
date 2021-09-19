@@ -20,4 +20,12 @@ describe('<CartAmount />', () => {
     expect(screen.getByText('1.1')).toBeInTheDocument()
     expect(screen.getByText('4')).toBeInTheDocument()
   })
+
+  it('should omit shipping value', () => {
+    render(<CartAmount subtotal={2.9} omitShipping />)
+
+    expect(screen.getByText('2.9')).toBeInTheDocument()
+    expect(screen.queryByText('1.1')).not.toBeInTheDocument()
+    expect(screen.queryByText('4')).not.toBeInTheDocument()
+  })
 })
