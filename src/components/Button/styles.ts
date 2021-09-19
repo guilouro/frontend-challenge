@@ -2,6 +2,10 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.button`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: ${theme.colors.base};
     border-radius: ${theme.border.radius};
     border: 0;
@@ -13,7 +17,6 @@ export const Wrapper = styled.button`
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
     transition: ${theme.transition.fast} background-color;
-    width: 100%;
 
     &:hover {
       background-color: ${theme.colors.baseDark};

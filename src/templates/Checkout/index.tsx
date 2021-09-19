@@ -21,7 +21,7 @@ const orders = [
   }
 ]
 
-function Checkout() {
+const Checkout = () => {
   const Submit = withSubmit((props: ButtonProps) => <Button {...props} />)
 
   return (
