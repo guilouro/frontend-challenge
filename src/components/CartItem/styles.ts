@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import * as InputField from 'components/InputField/styles'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -32,4 +33,14 @@ export const Title = styled.h3`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.normal};
   `}
+`
+export const Select = styled(InputField.Input).attrs({ as: 'select' })`
+  ${({ theme }) => css`
+    width: 5rem;
+    padding: 0.3rem ${theme.spacings.xxsmall};
+  `}
+`
+
+export const RemoveButton = styled.div`
+  cursor: pointer;
 `

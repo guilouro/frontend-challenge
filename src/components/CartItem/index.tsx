@@ -5,7 +5,9 @@ import PromotionalPrice from 'components/PromotionalPrice'
 
 export type CartItemProps = {
   quantity?: number
-} & Omit<ProductItemProps, 'review'>
+  onClickRemove: (event: React.MouseEvent<HTMLElement>) => void
+  onChangeQuantity: (event: React.ChangeEvent<HTMLSelectElement>) => void
+} & Omit<ProductItemProps, 'review' | 'onClickButton'>
 
 const CartItem = ({
   title,
@@ -13,7 +15,9 @@ const CartItem = ({
   price,
   promotionalPrice,
   packageInfo,
-  quantity = 1
+  quantity = 1,
+  onClickRemove,
+  onChangeQuantity
 }: CartItemProps) => (
   <S.Wrapper>
     <S.Image>
@@ -22,7 +26,13 @@ const CartItem = ({
     <S.Info>
       <S.Item>
         <S.Title>{title}</S.Title>
-        <span>X</span>
+        <S.RemoveButton
+          role="button"
+          aria-label={`Remove ${title}`}
+          onClick={onClickRemove}
+        >
+          <Image src="/img/delete.svg" width={20} height={20} loading="lazy" />
+        </S.RemoveButton>
       </S.Item>
       <S.Item>
         <span>Price</span>
@@ -39,13 +49,20 @@ const CartItem = ({
       <S.Item>
         <label htmlFor="quantity">Quantity</label>
         <span>
-          <input
+          <S.Select
             id="quantity"
             type="number"
             name="quantity"
-            defaultValue={quantity}
-            maxLength={2}
-          />
+            value={quantity}
+            onChange={onChangeQuantity}
+            min="1"
+          >
+            {[...Array(4).keys()].map((i) => (
+              <option key={i} value={i + 1}>
+                {i + 1}
+              </option>
+            ))}
+          </S.Select>
         </span>
       </S.Item>
     </S.Info>

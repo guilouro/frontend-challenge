@@ -4,11 +4,14 @@ import { render, screen } from 'utils/test-utils'
 import CartItem from '.'
 
 const props = {
+  id: '1',
   title: 'Barkyn Cannabis Oil para cães',
   image: '/img/products/oil.png',
   price: 2.29,
   promotionalPrice: 2.24,
-  packageInfo: '170g'
+  packageInfo: '170g',
+  onChangeQuantity: jest.fn,
+  onClickRemove: jest.fn
 }
 
 describe('<CartItem />', () => {
@@ -21,7 +24,7 @@ describe('<CartItem />', () => {
 
     expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument()
 
-    expect(screen.getByRole('spinbutton', { name: /quantity/i })).toHaveValue(1)
+    expect(screen.getByRole('combobox', { name: /quantity/i })).toHaveValue('1')
 
     expect(screen.getByText(props.promotionalPrice)).toBeInTheDocument()
     expect(screen.getByText(props.price)).toBeInTheDocument()
@@ -32,6 +35,6 @@ describe('<CartItem />', () => {
   it('should render quantity based on props', () => {
     render(<CartItem {...props} quantity={4} />)
 
-    expect(screen.getByRole('spinbutton', { name: /quantity/i })).toHaveValue(4)
+    expect(screen.getByRole('combobox', { name: /quantity/i })).toHaveValue('4')
   })
 })
