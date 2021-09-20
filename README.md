@@ -55,7 +55,9 @@ This project uses lot of stuff as:
 - [ ] Test coverage
 - [ ] A package or Component to handle Svg Icons
 - [ ] Full Form validations with correct error messages
+- [ ] I18n
 - [ ] User Experience with animations and best transitions
 - [ ] In a real world we could use a cloud to store user cart
 - [ ] Form field design implementation
 - [ ] Create a complete flow of CI/CD when deploy only if everything is ok
+- [ ] Implements NextSeo
