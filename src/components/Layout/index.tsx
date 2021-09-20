@@ -2,16 +2,21 @@ import { memo } from 'react'
 import Link from 'next/link'
 import HeaderBar from 'components/HeaderBar'
 import Image from 'next/image'
-import * as S from './styles'
 import { useCart } from 'hooks/use-cart'
 import CartSlider from 'components/CartSlider'
+import router from 'next/router'
+
+import * as S from './styles'
 
 export type LayoutProps = {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const { quantity, openSlider } = useCart()
+  const { quantity, openSlider, closeSlider } = useCart()
+
+  router.events.on('routeChangeStart', closeSlider)
+
   return (
     <S.Wrapper>
       <HeaderBar>

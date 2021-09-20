@@ -1,12 +1,30 @@
+import { useEffect, useState } from 'react'
 import Button from 'components/Button'
 import { useCart } from 'hooks/use-cart'
 import Image from 'next/image'
-import Link from 'next/link'
+
+import { getStorageItem, setStorageItem } from 'utils/storage'
+import router from 'next/router'
 
 import * as S from './styles'
 
 const Success = () => {
-  const { items } = useCart()
+  const { items, clearCart } = useCart()
+  const [data, setData] = useState<{ [key: string]: string }>({})
+
+  useEffect(() => {
+    const item = getStorageItem('DATA')
+
+    if (item) {
+      setData(item)
+    }
+  }, [])
+
+  const handleClick = () => {
+    clearCart()
+    setStorageItem('DATA', {})
+    router.push('/')
+  }
 
   return (
     <S.Wrapper>
@@ -54,17 +72,15 @@ const Success = () => {
 
         <Image src="/img/shipping.svg" width={25} height={25} loading="lazy" />
 
-        <p>Lorem ipsum street, 24</p>
-        <p>4100-1230</p>
-        <p>912345678</p>
+        <p>{data?.address}</p>
+        <p>{data?.postalcode}</p>
+        <p>{data?.country}</p>
 
         <Image src="/img/payment.svg" width={25} height={25} loading="lazy" />
 
-        <p>Lorem ipsum street, 24</p>
+        <p>{data?.cardnumber?.slice(-4).padStart(12, '*')}</p>
 
-        <Link href="/" passHref>
-          <Button as="a">Rerturn to website</Button>
-        </Link>
+        <Button onClick={handleClick}>Rerturn to website</Button>
       </S.SectionSummary>
     </S.Wrapper>
   )

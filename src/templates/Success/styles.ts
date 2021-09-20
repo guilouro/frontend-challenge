@@ -46,6 +46,10 @@ export const Text = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall} 0;
     color: #d4ccff;
+
+    strong {
+      font-size: ${theme.font.sizes.small};
+    }
   `}
 `
 

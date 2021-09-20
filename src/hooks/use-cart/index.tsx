@@ -3,6 +3,8 @@ import { ProductItemProps } from 'components/ProductItem'
 import { useContext, createContext, useState, useEffect } from 'react'
 import { getStorageItem, setStorageItem } from 'utils/storage'
 
+const STORAGE_KEY = 'CART'
+
 export type CartItem = {
   quantity?: number
 } & Pick<
@@ -52,7 +54,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
   const [sliderIsOpen, setsliderIsOpen] = useState(false)
 
   useEffect(() => {
-    const data = getStorageItem()
+    const data = getStorageItem(STORAGE_KEY)
 
     if (data) {
       setCartItems(data)
@@ -82,7 +84,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
 
   const saveCart = (items: CartObject) => {
     setCartItems(items)
-    setStorageItem(items)
+    setStorageItem(STORAGE_KEY, items)
   }
 
   const removeFromCart = (id: string) => {

@@ -37,6 +37,10 @@ export const Header = styled.div`
     align-items: center;
     height: 100%;
     padding: 0 ${theme.spacings.xxsmall};
+
+    h1 {
+      font-size: ${theme.font.sizes.large};
+    }
   `}
 `
 
