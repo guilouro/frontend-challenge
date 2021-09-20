@@ -1,6 +1,18 @@
+**Project link**: [https://barkyn-guilouro.vercel.app/](https://barkyn-guilouro.vercel.app/)
+
+![CI](https://github.com/guilouro/frontend-challenge/actions/workflows/ci.yml/badge.svg?branch=main)
+
 ## Getting Started
 
-First, run the development server:
+Clone the repository and install the dependencies with:
+
+```
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -18,6 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `lint`: runs the linter in all components and pages
 - `test`: runs jest to test all components and pages
 - `test:watch`: runs jest in watch mode
+- `test:e2e`: runs end-to-end tests with cypress
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 
