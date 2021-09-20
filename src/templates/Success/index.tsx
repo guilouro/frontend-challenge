@@ -80,7 +80,7 @@ const Success = () => {
 
         <p>{data?.cardnumber?.slice(-4).padStart(12, '*')}</p>
 
-        <Button onClick={handleClick}>Rerturn to website</Button>
+        <Button onClick={handleClick}>Return to website</Button>
       </S.SectionSummary>
     </S.Wrapper>
   )

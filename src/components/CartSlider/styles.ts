@@ -33,7 +33,7 @@ export const Header = styled.div`
   ${({ theme }) => css`
     display: grid;
     gap: ${theme.spacings.xxsmall};
-    grid-template-columns: 6fr 1fr 2.5rem;
+    grid-template-columns: 5fr 1fr 2.5rem;
     align-items: center;
     height: 100%;
     padding: 0 ${theme.spacings.xxsmall};

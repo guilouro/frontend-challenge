@@ -137,6 +137,7 @@ exports[`<ProductItem /> should render correctly 1`] = `
 
 <article
   class="c0"
+  data-cy="product-item"
 >
   <div
     class="c1"

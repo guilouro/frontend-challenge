@@ -26,7 +26,7 @@ const ProductItem = ({
   onClickButton,
   promotionalPrice = 0
 }: ProductItemProps) => (
-  <S.Wrapper>
+  <S.Wrapper data-cy="product-item">
     <S.Image>
       <Image src={image} alt={title} width={200} height={200} loading="lazy" />
     </S.Image>

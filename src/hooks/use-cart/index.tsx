@@ -61,8 +61,6 @@ const CartProvider = ({ children }: CartProviderProps) => {
     }
   }, [])
 
-  console.log(cartItems)
-
   const total = useMemo(
     () =>
       Object.values(cartItems)?.reduce((acc, item) => {

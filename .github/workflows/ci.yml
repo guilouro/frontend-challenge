@@ -1,5 +1,5 @@
 name: ci
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
@@ -35,3 +35,10 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Run MSW
+        run: npx msw init ./public
+
+      - name: Test e2e
+        run: yarn test:e2e:ci
+

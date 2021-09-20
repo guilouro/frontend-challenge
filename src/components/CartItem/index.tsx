@@ -19,7 +19,7 @@ const CartItem = ({
   onClickRemove,
   onChangeQuantity
 }: CartItemProps) => (
-  <S.Wrapper>
+  <S.Wrapper data-cy="cart-item">
     <S.Image>
       <Image src={image} alt={title} width={64} height={64} loading="lazy" />
     </S.Image>

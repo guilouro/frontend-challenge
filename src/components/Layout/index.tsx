@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
             />
           </S.Header>
         </Link>
-        <S.CartButton role="button" onClick={openSlider}>
+        <S.CartButton role="button" aria-label="Your Cart" onClick={openSlider}>
           <span>{quantity}</span>
           {quantity ? (
             <Image src="/img/cart_with_items.svg" width={32} height={32} />
