@@ -34,3 +34,6 @@ This project uses lot of stuff as:
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [MSW](https://github.com/mswjs/msw)
+- [Formcat](https://github.com/guilouro/formcat)
+
