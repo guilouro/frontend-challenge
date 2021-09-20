@@ -41,12 +41,11 @@ const Success = () => {
             <Image src="/img/check.svg" width={48} height={48} loading="lazy" />
           </S.Icon>
 
-          <S.Title>A sua encomenda foi confirmada!</S.Title>
+          <S.Title>Your order has been confirmed!</S.Title>
 
           <S.Text>
-            A encomenda <strong>V2KAYORPI</strong> está em preparação. Receberá
-            um email mal seja expedida e é normalmente entregue em{' '}
-            <strong>48h úteis.</strong>
+            The order <strong>V2KAYORPI</strong> is in preparation. Will receive
+            an email when we dispatch your product within 48h.
           </S.Text>
           <strong>Welcome to the Barkyn family! 💜</strong>
 
