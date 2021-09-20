@@ -9,10 +9,7 @@ export function getStorageItem(key: string) {
   return JSON.parse(data || '[]')
 }
 
-export function setStorageItem(
-  key: string,
-  value: CartObject & { [key: string]: string }
-) {
+export function setStorageItem(key: string, value: CartObject) {
   if (typeof window === 'undefined') return
 
   const data = JSON.stringify(value)
